@@ -1,0 +1,4 @@
+#! /bin/bash
+# This is a bash script, not a wish script.
+# Don't panic if your shell doesn't support "$1"
+echo This is the first argument: $1

@@ -1,0 +1,2 @@
+loop 3 echo hello
+loop 4 echo world
