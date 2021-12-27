@@ -53,8 +53,8 @@ A chunk can be in 3 possible states: Assigned, Compressed, Freed.
     * case1: chunk is waiting for its mapped slot buffer to become free.
     * case2: chunk is being compressed by a C thread to a mapped slot buffer.
 - **Compressed** 
-    case1: chunk has been compressed into a slot buffer and is waiting for the W thread to become available to write it to output
-    case2: chunk is being written by the W thread from its mapped slot buffer to output.
+    * case1: chunk has been compressed into a slot buffer and is waiting for the W thread to become available to write it to output
+    * case2: chunk is being written by the W thread from its mapped slot buffer to output.
 - **Freed**
     chunk has been compressed and written (attached to previous compressor by W thread from its slot buffer. The corresponding slot 
     buffer is freed up and W thread signals for the C thread to use the freed slot buffer.
